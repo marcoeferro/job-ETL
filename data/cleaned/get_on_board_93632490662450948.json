@@ -1,0 +1,28 @@
+{
+    "link": "https://www.getonbrd.com/jobs/data-science-analytics/lead-data-engineer-interfell-remote",
+    "title": "Lead Data Engineer",
+    "business_name": "in\nInterfell",
+    "description": {
+        "Funciones del cargo": "Lead the design and implementation of a scalable Customer Data Platform (CDP) integrating batch and real-time data from multiple sources (DMS, CRMs, social networks, web traffic).Design and develop data pipelines using tools like Fivetran, dbt, Apache Spark, and Airflow to ensure high-performance, reliable data flow.Architect and manage data lakes and cloud data warehouses (e.g., BigQuery, Redshift, Snowflake, Databricks).Build and optimize streaming pipelines with GCP Pub/Sub, Kafka, or AWS SNS to support real-time analytics and personalization.Develop integrations with Customer Data Platforms (CDPs) such as Twilio Segment or RudderStack and connect with marketing automation systems.Collaborate with Product, Engineering, and Data Science teams to deliver data-driven insights powering personalization, predictive modeling, and segmentation.Ensure strong alignment between data initiatives and the product roadmap, prioritizing data products that deliver measurable customer impact.Define architecture and strategy for multi-tenant SaaS data solutions, ensuring scalability, reliability, and data security.Drive adoption of modern technologies and best practices in data engineering, promoting a culture of technical excellence.Maintain high standards for data quality, governance, and compliance with industry regulations.",
+        "Requerimientos del cargo": "8+ years of professional experience in data engineering, with deep expertise in both batch and streaming data architectures.Proven experience building scalable ETL/ELT pipelines and distributed data processing frameworks.Strong proficiency in Python and modern ETL tools (GCP Cloud Dataflow, Fivetran, dbt, Apache Spark).Hands-on experience with cloud-based data platforms such as BigQuery, Snowflake, Redshift, or Databricks.Solid understanding of Customer Data Platforms (CDPs) like Twilio Segment or RudderStack.Experience with streaming technologies (GCP Pub/Sub, Kafka, AWS SNS) is highly desirable.Background in multi-tenant SaaS architectures is a strong plus.GCP.",
+        "Beneficios": "USA Contractor100% RemoteHolidays OffPaid Time OffHealth Insurance Assistance ProgramExcellent teamwork and work environmentTraining and upskilling opportunitiesHigh-impact role shaping the company’s data ecosystem and AI capabilities",
+        "Conditions": "Fully remoteYou can work from anywhere in the world."
+    },
+    "location": "Remote",
+    "seniority": "Expert",
+    "applications_count": "13\n",
+    "all_tags": [
+        "Python",
+        "Apache Spark",
+        "GCP",
+        "Data Engineering",
+        "Customer Data Platforms",
+        "Data Pipeline Orchestration",
+        "ETL/ELT Pipelines",
+        "Cloud Data Warehouses",
+        "Streaming Technologies",
+        "Multi-tenant SaaS Architecture"
+    ],
+    "work_schedule": "FULL_TIME",
+    "publication_time": "November 20, 2025"
+}

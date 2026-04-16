@@ -1,0 +1,441 @@
+2025-11-20 11:28:58,864 - INFO - Iniciando scraping | trabajo='analista de datos' | page=0
+2025-11-20 11:29:10,603 - INFO - Página 0 guardada correctamente (20 resultados).
+2025-11-20 11:29:10,603 - INFO - Iniciando scraping | trabajo='analista de datos' | page=1
+2025-11-20 11:29:23,104 - INFO - Página 1 guardada correctamente (4 resultados).
+2025-11-20 11:29:23,104 - INFO - Iniciando scraping | trabajo='analista de datos' | page=2
+2025-11-20 11:29:34,368 - WARNING - No hay más resultados en page=2. Deteniendo scraping.
+2025-11-20 11:29:34,369 - INFO - Scraping finalizado para 'analista de datos' en page=2.
+2025-11-20 11:29:34,369 - INFO - Iniciando scraping | trabajo='cientifico de datos' | page=0
+2025-11-20 11:29:45,900 - INFO - Página 0 guardada correctamente (2 resultados).
+2025-11-20 11:29:45,904 - INFO - Iniciando scraping | trabajo='cientifico de datos' | page=1
+2025-11-20 11:29:58,215 - WARNING - No hay más resultados en page=1. Deteniendo scraping.
+2025-11-20 11:29:58,216 - INFO - Scraping finalizado para 'cientifico de datos' en page=1.
+2025-11-20 11:29:58,217 - INFO - Iniciando scraping | trabajo='ingeniero de datos' | page=0
+2025-11-20 11:30:09,895 - INFO - Página 0 guardada correctamente (4 resultados).
+2025-11-20 11:30:09,896 - INFO - Iniciando scraping | trabajo='ingeniero de datos' | page=1
+2025-11-20 11:30:20,372 - WARNING - No hay más resultados en page=1. Deteniendo scraping.
+2025-11-20 11:30:20,373 - INFO - Scraping finalizado para 'ingeniero de datos' en page=1.
+2025-11-20 11:30:20,374 - INFO - Iniciando scraping | trabajo='data analyst' | page=0
+2025-11-20 11:30:30,810 - INFO - Página 0 guardada correctamente (9 resultados).
+2025-11-20 11:30:30,810 - INFO - Iniciando scraping | trabajo='data analyst' | page=1
+2025-11-20 11:30:41,049 - WARNING - No hay más resultados en page=1. Deteniendo scraping.
+2025-11-20 11:30:41,050 - INFO - Scraping finalizado para 'data analyst' en page=1.
+2025-11-20 11:30:41,051 - INFO - Iniciando scraping | trabajo='data scientist' | page=0
+2025-11-20 11:30:52,456 - INFO - Página 0 guardada correctamente (2 resultados).
+2025-11-20 11:30:52,457 - INFO - Iniciando scraping | trabajo='data scientist' | page=1
+2025-11-20 11:31:03,902 - WARNING - No hay más resultados en page=1. Deteniendo scraping.
+2025-11-20 11:31:03,902 - INFO - Scraping finalizado para 'data scientist' en page=1.
+2025-11-20 11:31:03,903 - INFO - Iniciando scraping | trabajo='data engineer' | page=0
+2025-11-20 11:31:15,764 - INFO - Página 0 guardada correctamente (2 resultados).
+2025-11-20 11:31:15,764 - INFO - Iniciando scraping | trabajo='data engineer' | page=1
+2025-11-20 11:31:25,951 - WARNING - No hay más resultados en page=1. Deteniendo scraping.
+2025-11-20 11:31:25,953 - INFO - Scraping finalizado para 'data engineer' en page=1.
+2025-11-21 06:41:19,687 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 06:41:19,687 - INFO - Abriendo el navegador para la URL: https://www.getonbrd.com/empleos-analista-de-datos
+2025-11-21 06:41:35,238 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 06:41:35,238 - INFO - Abriendo el navegador para la URL: https://www.getonbrd.com/empleos-desarrollador-web
+2025-11-21 06:41:48,157 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 06:41:48,157 - INFO - Abriendo el navegador para la URL: https://www.getonbrd.com/empleos-gerente-de-proyectos
+2025-11-21 07:13:47,041 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 07:13:48,335 - INFO - Cargando la página: https://www.getonbrd.com/empleos-analista-de-datos
+2025-11-21 07:13:56,053 - INFO - Página cargada, longitud del HTML: 287963 caracteres
+2025-11-21 07:13:58,255 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 07:13:59,435 - INFO - Cargando la página: https://www.getonbrd.com/empleos-desarrollador-web
+2025-11-21 07:14:07,313 - INFO - Página cargada, longitud del HTML: 284316 caracteres
+2025-11-21 07:14:09,449 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 07:14:10,964 - INFO - Cargando la página: https://www.getonbrd.com/empleos-gerente-de-proyectos
+2025-11-21 07:14:19,127 - INFO - Página cargada, longitud del HTML: 287233 caracteres
+2025-11-21 07:16:30,401 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 07:16:31,652 - INFO - Cargando la página: https://www.getonbrd.com/empleos-analista-de-datos
+2025-11-21 07:16:40,181 - INFO - Página cargada, longitud del HTML: 287657 caracteres
+2025-11-21 07:16:42,325 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 07:16:43,542 - INFO - Cargando la página: https://www.getonbrd.com/empleos-desarrollador-web
+2025-11-21 07:16:54,500 - INFO - Página cargada, longitud del HTML: 284190 caracteres
+2025-11-21 07:16:56,647 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 07:16:57,944 - INFO - Cargando la página: https://www.getonbrd.com/empleos-gerente-de-proyectos
+2025-11-21 07:17:07,140 - INFO - Página cargada, longitud del HTML: 287250 caracteres
+2025-11-21 07:30:18,312 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 07:30:18,312 - INFO - Obteniendo HTML para la URL: https://www.getonbrd.com/empleos-analista-de-datos
+2025-11-21 07:30:19,724 - ERROR - Error al obtener el HTML con CDP: Object of type function is not JSON serializable
+2025-11-21 07:30:21,865 - ERROR - Error en la función main para el trabajo analista-de-datos: 'NoneType' object is not subscriptable
+2025-11-21 07:30:21,865 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 07:30:21,865 - INFO - Obteniendo HTML para la URL: https://www.getonbrd.com/empleos-desarrollador-web
+2025-11-21 07:30:23,052 - ERROR - Error al obtener el HTML con CDP: Object of type function is not JSON serializable
+2025-11-21 07:30:25,151 - ERROR - Error en la función main para el trabajo desarrollador-web: 'NoneType' object is not subscriptable
+2025-11-21 07:30:25,151 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 07:30:25,151 - INFO - Obteniendo HTML para la URL: https://www.getonbrd.com/empleos-gerente-de-proyectos
+2025-11-21 07:30:26,400 - ERROR - Error al obtener el HTML con CDP: Object of type function is not JSON serializable
+2025-11-21 07:30:28,532 - ERROR - Error en la función main para el trabajo gerente-de-proyectos: 'NoneType' object is not subscriptable
+2025-11-21 08:09:22,585 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 08:09:27,689 - INFO - Finalizado el scraping para el trabajo: analista de datos
+2025-11-21 08:09:27,689 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 08:09:31,845 - INFO - Finalizado el scraping para el trabajo: desarrollador web
+2025-11-21 08:09:31,845 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 08:09:36,188 - INFO - Finalizado el scraping para el trabajo: gerente de proyectos
+2025-11-21 08:13:42,483 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 08:13:52,574 - ERROR - Error en la función main para el trabajo analista de datos: 'NoneType' object is not subscriptable
+2025-11-21 08:13:54,743 - INFO - Finalizado el scraping para el trabajo: analista de datos
+2025-11-21 08:13:54,743 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 08:14:03,512 - ERROR - Error en la función main para el trabajo desarrollador web: 'NoneType' object is not subscriptable
+2025-11-21 08:14:05,639 - INFO - Finalizado el scraping para el trabajo: desarrollador web
+2025-11-21 08:14:05,639 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 08:14:19,833 - ERROR - Error en la función main para el trabajo gerente de proyectos: 'NoneType' object is not subscriptable
+2025-11-21 08:14:21,990 - INFO - Finalizado el scraping para el trabajo: gerente de proyectos
+2025-11-21 08:14:58,860 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 08:14:58,861 - INFO - Obteniendo HTML para la URL: https://www.getonbrd.com/empleos-analista-de-datos
+2025-11-21 08:15:00,197 - ERROR - Error al obtener el HTML con CDP: Object of type function is not JSON serializable
+2025-11-21 08:15:02,302 - ERROR - Error en la función main para el trabajo analista-de-datos: 'NoneType' object is not subscriptable
+2025-11-21 08:15:02,302 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 08:15:02,302 - INFO - Obteniendo HTML para la URL: https://www.getonbrd.com/empleos-desarrollador-web
+2025-11-21 08:15:03,533 - ERROR - Error al obtener el HTML con CDP: Object of type function is not JSON serializable
+2025-11-21 08:15:05,633 - ERROR - Error en la función main para el trabajo desarrollador-web: 'NoneType' object is not subscriptable
+2025-11-21 08:15:05,634 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 08:15:05,634 - INFO - Obteniendo HTML para la URL: https://www.getonbrd.com/empleos-gerente-de-proyectos
+2025-11-21 08:15:06,865 - ERROR - Error al obtener el HTML con CDP: Object of type function is not JSON serializable
+2025-11-21 08:15:08,994 - ERROR - Error en la función main para el trabajo gerente-de-proyectos: 'NoneType' object is not subscriptable
+2025-11-21 08:22:35,675 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 08:22:35,676 - INFO - Iniciando Selenium para la URL: https://www.getonbrd.com/empleos-analista-de-datos
+2025-11-21 08:22:37,073 - ERROR - Error ejecutando Selenium con CDP: 'function' object has no attribute 'on_event'
+2025-11-21 08:22:39,177 - ERROR - Error en la función main para el trabajo analista-de-datos: 'NoneType' object is not subscriptable
+2025-11-21 08:22:39,177 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 08:22:39,177 - INFO - Iniciando Selenium para la URL: https://www.getonbrd.com/empleos-desarrollador-web
+2025-11-21 08:22:40,427 - ERROR - Error ejecutando Selenium con CDP: 'function' object has no attribute 'on_event'
+2025-11-21 08:22:42,558 - ERROR - Error en la función main para el trabajo desarrollador-web: 'NoneType' object is not subscriptable
+2025-11-21 08:22:42,558 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 08:22:42,558 - INFO - Iniciando Selenium para la URL: https://www.getonbrd.com/empleos-gerente-de-proyectos
+2025-11-21 08:22:43,749 - ERROR - Error ejecutando Selenium con CDP: 'function' object has no attribute 'on_event'
+2025-11-21 08:22:45,859 - ERROR - Error en la función main para el trabajo gerente-de-proyectos: 'NoneType' object is not subscriptable
+2025-11-21 08:28:55,953 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 08:29:05,893 - ERROR - Error en la función main para el trabajo analista-de-datos: Message: unknown command: 'Performance.getEntries' wasn't found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77ffda235
+	0x7ff77fd32630
+	0x7ff77fac16dd
+	0x7ff77faadc2a
+	0x7ff77faac30d
+	0x7ff77faacbcb
+	0x7ff77faacb00
+	0x7ff77fac6820
+	0x7ff77fb7a6ae
+	0x7ff77fb42b0a
+	0x7ff77fb6baba
+	0x7ff77fb0b0ed
+	0x7ff77fb0bf63
+	0x7ff780005d60
+	0x7ff77ffffe8a
+	0x7ff780021005
+	0x7ff77fd4d71e
+	0x7ff77fd54e1f
+	0x7ff77fd3b7c4
+	0x7ff77fd3b97f
+	0x7ff77fd218e8
+	0x7ffd6811e8d7
+	0x7ffd690cc53c
+
+2025-11-21 08:29:05,893 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 08:29:17,577 - ERROR - Error en la función main para el trabajo desarrollador-web: Message: unknown command: 'Performance.getEntries' wasn't found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77ffda235
+	0x7ff77fd32630
+	0x7ff77fac16dd
+	0x7ff77faadc2a
+	0x7ff77faac30d
+	0x7ff77faacbcb
+	0x7ff77faacb00
+	0x7ff77fac6820
+	0x7ff77fb7a6ae
+	0x7ff77fb42b0a
+	0x7ff77fb6baba
+	0x7ff77fb0b0ed
+	0x7ff77fb0bf63
+	0x7ff780005d60
+	0x7ff77ffffe8a
+	0x7ff780021005
+	0x7ff77fd4d71e
+	0x7ff77fd54e1f
+	0x7ff77fd3b7c4
+	0x7ff77fd3b97f
+	0x7ff77fd218e8
+	0x7ffd6811e8d7
+	0x7ffd690cc53c
+
+2025-11-21 08:29:17,577 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 08:29:30,063 - ERROR - Error en la función main para el trabajo gerente-de-proyectos: Message: unknown command: 'Performance.getEntries' wasn't found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77ffda235
+	0x7ff77fd32630
+	0x7ff77fac16dd
+	0x7ff77faadc2a
+	0x7ff77faac30d
+	0x7ff77faacbcb
+	0x7ff77faacb00
+	0x7ff77fac6820
+	0x7ff77fb7a6ae
+	0x7ff77fb42b0a
+	0x7ff77fb6baba
+	0x7ff77fb0b0ed
+	0x7ff77fb0bf63
+	0x7ff780005d60
+	0x7ff77ffffe8a
+	0x7ff780021005
+	0x7ff77fd4d71e
+	0x7ff77fd54e1f
+	0x7ff77fd3b7c4
+	0x7ff77fd3b97f
+	0x7ff77fd218e8
+	0x7ffd6811e8d7
+	0x7ffd690cc53c
+
+2025-11-21 09:26:29,766 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 09:26:29,766 - INFO - Iniciando scrape_getonboard para analista-de-datos
+2025-11-21 09:26:40,200 - INFO - Encontrados 100 enlaces de ofertas
+2025-11-21 09:26:40,200 - INFO - [0] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/analista-de-datos-bi-bc-tecnologia-remote
+2025-11-21 09:26:42,167 - INFO - [1] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/analista-de-datos-bc-tecnologia-buenos-aires
+2025-11-21 09:26:44,852 - INFO - [2] Entrando a https://www.getonbrd.com/empleos/innovacion-agilidad/analista-de-consultoria-interfell-remote
+2025-11-21 09:26:47,621 - INFO - [3] Entrando a https://www.getonbrd.com/jobs/innovation-agile/analista-de-procesos-business-analyst-process-analyst-cyd-tecnologia-remote
+2025-11-21 09:26:50,448 - INFO - [4] Entrando a https://www.getonbrd.com/jobs/innovacion-agilidad/product-operations-analyst-compara-remote
+2025-11-21 09:26:53,200 - INFO - [5] Entrando a https://www.getonbrd.com/jobs/operations-management/analista-de-proyectos-y-procesos-proyecto-bc-tecnologia-santiago
+2025-11-21 09:26:56,830 - INFO - [6] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/analista-digital-bnp-paribas-cardif-santiago-40d5
+2025-11-21 09:27:00,951 - INFO - [7] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/analytics-engineer-artefact-latam-remote
+2025-11-21 09:27:03,695 - INFO - [8] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/analista-de-datos-business-intelligence-bc-tecnologia-santiago
+2025-11-21 09:27:06,630 - INFO - [9] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/data-scientist-global-mobility-apex-s-a-remote-b6d3
+2025-11-21 09:27:09,380 - INFO - [10] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/business-intelligence-analyst-vemo-mexico-ciudad-de-mexico
+2025-11-21 09:27:12,945 - INFO - [11] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/business-analyst-financiero-bc-tecnologia-santiago
+2025-11-21 09:27:15,833 - INFO - [12] Entrando a https://www.getonbrd.com/jobs/operaciones-management/analista-de-operaciones-financieras-y-medios-de-pago-bc-tecnologia-santiago
+2025-11-21 09:27:18,824 - INFO - [13] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/senior-data-consultant-artefact-latam-remote
+2025-11-21 09:27:23,101 - INFO - [14] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/business-analyst-digital-analytics-bi-bc-tecnologia-santiago
+2025-11-21 09:27:25,955 - INFO - [15] Entrando a https://www.getonbrd.com/jobs/innovation-agile/analista-de-consultoria-foris-ai-santiago-bogota-3ed8
+2025-11-21 09:27:29,048 - INFO - [16] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/data-scientist-artefact-latam-remote
+2025-11-21 09:27:31,856 - INFO - [17] Entrando a https://www.getonbrd.com/jobs/operations-management/analista-financiero-marketplace-bc-tecnologia-santiago
+2025-11-21 09:27:36,042 - INFO - [18] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/jovenes-profesionales-del-mundo-de-tecnologia-banco-santander-chile-santiago
+2025-11-21 09:27:38,658 - INFO - [19] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-scientist-2brains-remote-7254
+2025-11-21 09:27:40,212 - INFO - [20] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-a-de-continuidad-operacional-7x7-contac-ingenieros-santiago
+2025-11-21 09:27:42,957 - INFO - [21] Entrando a https://www.getonbrd.com/empleos/innovacion-agilidad/analista-funcional-bnp-paribas-cardif-santiago-4b85
+2025-11-21 09:27:45,457 - INFO - [22] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-a-de-datos-bc-tecnologia-remote
+2025-11-21 09:27:48,440 - INFO - [23] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/ingeniero-a-de-datos-aws-gcp-bc-tecnologia-santiago
+2025-11-21 09:27:51,032 - INFO - [24] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/sr-analyst-financial-planning-analytics-coderslab-io-ciudad-de-panama
+2025-11-21 09:27:53,422 - INFO - [25] Entrando a https://www.getonbrd.com/jobs/programming/analiosta-funcional-bnp-paribas-cardif-santiago
+2025-11-21 09:27:56,419 - INFO - [26] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/business-analyst-coderslab-io-santiago-f154
+2025-11-21 09:27:59,523 - INFO - [27] Entrando a https://www.getonbrd.com/jobs/sales/business-analyst-proyecto-digital-bc-tecnologia-santiago
+2025-11-21 09:28:02,051 - INFO - [28] Entrando a https://www.getonbrd.com/jobs/innovation-agile/analista-funcional-industria-financiera-coderslab-io-santiago
+2025-11-21 09:28:04,338 - INFO - [29] Entrando a https://www.getonbrd.com/empleos/operaciones-management/analista-de-procesos-bancario-bc-tecnologia-santiago
+2025-11-21 09:28:06,537 - INFO - [30] Entrando a https://www.getonbrd.com/jobs/customer-support/customer-success-analyst-the-optimal-santiago
+2025-11-21 09:28:09,088 - INFO - [31] Entrando a https://www.getonbrd.com/jobs/operations-management/auxiliar-de-operaciones-bc-tecnologia-remote
+2025-11-21 09:28:12,686 - INFO - [32] Entrando a https://www.getonbrd.com/empleos/innovacion-agilidad/business-analyst-proyectos-digitales-bc-tecnologia-concepcion
+2025-11-21 09:28:15,518 - INFO - [33] Entrando a https://www.getonbrd.com/jobs/cybersecurity/analista-de-seguridad-de-la-informacion-rubro-bancario-bc-tecnologia-santiago
+2025-11-21 09:28:18,446 - INFO - [34] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-engineer-senior-equifax-chile-santiago
+2025-11-21 09:28:21,381 - INFO - [35] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-scientist-neuralworks-santiago-e1ee
+2025-11-21 09:28:25,111 - INFO - [36] Entrando a https://www.getonbrd.com/jobs/cybersecurity/analista-en-ciberseguridad-y-redes-grupo-lagos-santiago
+2025-11-21 09:28:28,586 - INFO - [37] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/consultor-cientifico-de-datos-microsystem-santiago
+2025-11-21 09:28:31,718 - INFO - [38] Entrando a https://www.getonbrd.com/jobs/sysadmin-devops-qa/analista-de-aseguramiento-de-calidad-de-software-usercode-spa-remote-eb1a
+2025-11-21 09:28:35,635 - INFO - [39] Entrando a https://www.getonbrd.com/jobs/programacion/analista-programador-bice-vida-santiago-3100
+2025-11-21 09:28:39,171 - INFO - [40] Entrando a https://www.getonbrd.com/jobs/programacion/analista-programador-senior-bc-tecnologia-remote
+2025-11-21 09:28:42,257 - INFO - [41] Entrando a https://www.getonbrd.com/jobs/innovation-agile/analista-funcional-usercode-spa-remote
+2025-11-21 09:28:45,231 - INFO - [42] Entrando a https://www.getonbrd.com/jobs/sales/ingeniero-ventas-internacionales-agrosuper-rancagua
+2025-11-21 09:28:49,047 - INFO - [43] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/business-analyst-bc-tecnologia-santiago-a6eb
+2025-11-21 09:28:52,516 - INFO - [44] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/especialista-en-soporte-y-manejo-de-datos-bc-tecnologia-santiago
+2025-11-21 09:28:55,964 - INFO - [45] Entrando a https://www.getonbrd.com/jobs/programming/desarrollador-data-coderslab-io-lima
+2025-11-21 09:29:00,212 - INFO - [46] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/senior-data-engineer-checkr-santiago
+2025-11-21 09:29:02,831 - INFO - [47] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-de-datos-ai-devups-remote
+2025-11-21 09:29:05,297 - INFO - [48] Entrando a https://www.getonbrd.com/jobs/innovacion-agilidad/analista-funcional-senior-bc-tecnologia-santiago
+2025-11-21 09:29:07,747 - INFO - [49] Entrando a https://www.getonbrd.com/empleos/programacion/front-end-developer-neuralworks-santiago-e569
+2025-11-21 09:29:11,962 - INFO - [50] Entrando a https://www.getonbrd.com/jobs/operations-management/practicante-a-administracion-y-negocios-2brains-remote
+2025-11-21 09:29:14,420 - INFO - [51] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/analista-desarrollador-de-datos-coderslab-io-lima
+2025-11-21 09:29:17,012 - INFO - [52] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-engineer-gcp-proyecto-hibrido-bc-tecnologia-santiago
+2025-11-21 09:29:19,792 - INFO - [53] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/analista-power-bi-bc-tecnologia-santiago
+2025-11-21 09:29:23,455 - INFO - [54] Entrando a https://www.getonbrd.com/empleos/programacion/analista-funcional-biometria-aplicada-santiago
+2025-11-21 09:29:26,746 - INFO - [55] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/ingeniero-a-de-datos-aws-latam-bc-tecnologia-remote-bf6e
+2025-11-21 09:29:31,094 - INFO - [56] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-management-banco-santander-chile-santiago-2b5f
+2025-11-21 09:29:33,708 - INFO - [57] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/analista-de-datos-bi-gatblac-santiago
+2025-11-21 09:29:36,842 - INFO - [58] Entrando a https://www.getonbrd.com/jobs/programacion/analista-de-sistemas-salesforce-bc-tecnologia-santiago
+2025-11-21 09:29:40,394 - INFO - [59] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-engineer-coderslab-io-remote-bdcc
+2025-11-21 09:29:43,442 - INFO - [60] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/analista-de-operaciones-medios-de-pago-coderslab-io-santiago
+2025-11-21 09:29:47,550 - INFO - [61] Entrando a https://www.getonbrd.com/jobs/operations-management/analista-de-control-de-gestion-bc-tecnologia-santiago
+2025-11-21 09:29:50,442 - INFO - [62] Entrando a https://www.getonbrd.com/jobs/sysadmin-devops-qa/analista-qa-coderslab-io-lima
+2025-11-21 09:29:53,397 - INFO - [63] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-engineer-arkho-remote-8acc
+2025-11-21 09:29:58,064 - INFO - [64] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/analista-sql-server-etl-y-automatizacion-bc-tecnologia-santiago
+2025-11-21 09:30:01,511 - INFO - [65] Entrando a https://www.getonbrd.com/jobs/comercial-ventas/consultor-sales-operations-interfell-remote
+2025-11-21 09:30:04,190 - INFO - [66] Entrando a https://www.getonbrd.com/empleos/cybersecurity/analista-de-seguridad-de-la-informacion-jr-bc-tecnologia-santiago
+2025-11-21 09:30:07,501 - INFO - [67] Entrando a https://www.getonbrd.com/jobs/operaciones-management/business-operations-analyst-iconstruye-santiago
+2025-11-21 09:30:12,255 - INFO - [68] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/ingeniero-de-datos-blue-smile-technology-santiago
+2025-11-21 09:30:15,694 - INFO - [69] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-de-datos-para-cloud-azure-coderslab-io-remote
+2025-11-21 09:30:18,828 - INFO - [70] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-engineer-aws-bc-tecnologia-santiago-6454
+2025-11-21 09:30:22,966 - INFO - [71] Entrando a https://www.getonbrd.com/jobs/sysadmin-devops-qa/analista-funcional-qa-gatblac-remote-e8eb
+2025-11-21 09:30:26,255 - INFO - [72] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/ingeniero-a-de-datos-aws-latam-bc-tecnologia-remote-46b3
+2025-11-21 09:30:29,535 - INFO - [73] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-de-datos-microsystem-santiago-d91b
+2025-11-21 09:30:34,450 - INFO - [74] Entrando a https://www.getonbrd.com/jobs/technical-support/analista-de-soporte-tecnico-jr-amedia-buenos-aires
+2025-11-21 09:30:37,067 - INFO - [75] Entrando a https://www.getonbrd.com/jobs/innovation-agile/analista-de-proyectos-senior-bc-tecnologia-remote
+2025-11-21 09:30:39,573 - INFO - [76] Entrando a https://www.getonbrd.com/jobs/programming/desarrollador-fullstack-tcit-remote
+2025-11-21 09:30:42,172 - INFO - [77] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-de-datos-bc-tecnologia-remote
+2025-11-21 09:30:46,101 - INFO - [78] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/arquitecto-a-de-datos-global-mobility-apex-s-a-remote
+2025-11-21 09:30:48,812 - INFO - [79] Entrando a https://www.getonbrd.com/empleos/operaciones-management/analista-de-finanzas-rankmi-lima
+2025-11-21 09:30:51,366 - INFO - [80] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-a-de-mejora-continua-timining-remote
+2025-11-21 09:30:54,067 - INFO - [81] Entrando a https://www.getonbrd.com/jobs/cybersecurity/analista-de-seguridad-de-la-informacion-junior-intermedio-bc-tecnologia-santiago
+2025-11-21 09:30:58,239 - INFO - [82] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/senior-ingeniero-de-datos-sector-bancario-devsu-quito-1dd6
+2025-11-21 09:31:00,997 - INFO - [83] Entrando a https://www.getonbrd.com/jobs/digital-marketing/web-growth-coordinator-intelia-santiago
+2025-11-21 09:31:03,658 - INFO - [84] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/desarrollador-cloud-gcp-tcit-remote-dff6
+2025-11-21 09:31:06,259 - INFO - [85] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-de-datos-gcp-bc-tecnologia-santiago-9436
+2025-11-21 09:31:09,208 - INFO - [86] Entrando a https://www.getonbrd.com/jobs/sysadmin-devops-qa/analista-qa-coderslab-io-lima-a265
+2025-11-21 09:31:11,548 - INFO - [87] Entrando a https://www.getonbrd.com/empleos/innovacion-agilidad/consultor-a-freelance-en-looker-studio-lisit-remote
+2025-11-21 09:31:14,021 - INFO - [88] Entrando a https://www.getonbrd.com/jobs/hr/recruitment-analyst-neuralworks-santiago-c213
+2025-11-21 09:31:16,747 - INFO - [89] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-engineer-senior-coderslab-io-remote
+2025-11-21 09:31:20,313 - INFO - [90] Entrando a https://www.getonbrd.com/empleos/operaciones-management/analista-de-operaciones-coderslab-io-santiago-a47c
+2025-11-21 09:31:22,478 - INFO - [91] Entrando a https://www.getonbrd.com/jobs/programming/desarrollador-etl-bc-tecnologia-santiago
+2025-11-21 09:31:25,163 - INFO - [92] Entrando a https://www.getonbrd.com/jobs/innovation-agile/analista-funcional-coderslab-io-lima
+2025-11-21 09:31:27,511 - INFO - [93] Entrando a https://www.getonbrd.com/jobs/sysadmin-devops-qa/analista-qa-plazo-fijo-autofact-remote
+2025-11-21 09:31:30,318 - INFO - [94] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/data-engineer-senior-coderslab-io-santiago
+2025-11-21 09:31:33,943 - INFO - [95] Entrando a https://www.getonbrd.com/empleos/data-science-analytics/data-engineer-bc-tecnologia-santiago-1309
+2025-11-21 09:31:36,734 - INFO - [96] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/ingeniero-de-datos-databricks-bc-tecnologia-santiago
+2025-11-21 09:31:39,910 - INFO - [97] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/analista-de-bi-colombia-bc-tecnologia-bogota
+2025-11-21 09:31:42,549 - INFO - [98] Entrando a https://www.getonbrd.com/jobs/sales/ejecutivo-comercial-enterprise-retailcompass-remote
+2025-11-21 09:31:45,562 - INFO - [99] Entrando a https://www.getonbrd.com/jobs/data-science-analytics/data-scientist-senior-freelance-aws-sagemaker-coyanservices-remote
+2025-11-21 09:31:51,877 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 09:31:51,877 - INFO - Iniciando scrape_getonboard para desarrollador-web
+2025-11-21 09:32:00,885 - INFO - Encontrados 100 enlaces de ofertas
+2025-11-21 09:32:00,885 - INFO - [0] Entrando a https://www.getonbrd.com/empleos/programacion/desarrollador-de-sw-frontend-sonda-santiago-a8e9
+2025-11-21 09:32:02,875 - INFO - [1] Entrando a https://www.getonbrd.com/jobs/design-ux/disenador-web-mediastream-bogota-santiago
+2025-11-21 09:32:06,174 - INFO - [2] Entrando a https://www.getonbrd.com/jobs/programming/full-stack-devoloper-ordename-santiago
+2025-11-21 09:32:09,950 - INFO - [3] Entrando a https://www.getonbrd.com/jobs/programming/desarrollador-fullstack-coderslab-io-barranquilla
+2025-11-21 09:32:12,226 - WARNING - No se encontró div.full-width en https://www.getonbrd.com/jobs/programming/desarrollador-fullstack-coderslab-io-barranquilla: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77ffda235
+	0x7ff77fd32630
+	0x7ff77fac16dd
+	0x7ff77fa98e31
+	0x7ff77fb4a22e
+	0x7ff77fb6b3d2
+	0x7ff77fb0b0ed
+	0x7ff77fb0bf63
+	0x7ff780005d60
+	0x7ff77ffffe8a
+	0x7ff780021005
+	0x7ff77fd4d71e
+	0x7ff77fd54e1f
+	0x7ff77fd3b7c4
+	0x7ff77fd3b97f
+	0x7ff77fd218e8
+	0x7ffd6811e8d7
+	0x7ffd690cc53c
+
+2025-11-21 09:32:12,226 - WARNING - No se encontró div.gb-tags en https://www.getonbrd.com/jobs/programming/desarrollador-fullstack-coderslab-io-barranquilla: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77ffda235
+	0x7ff77fd32630
+	0x7ff77fac16dd
+	0x7ff77fa98e31
+	0x7ff77fb4a22e
+	0x7ff77fb6b3d2
+	0x7ff77fb0b0ed
+	0x7ff77fb0bf63
+	0x7ff780005d60
+	0x7ff77ffffe8a
+	0x7ff780021005
+	0x7ff77fd4d71e
+	0x7ff77fd54e1f
+	0x7ff77fd3b7c4
+	0x7ff77fd3b97f
+	0x7ff77fd218e8
+	0x7ffd6811e8d7
+	0x7ffd690cc53c
+
+2025-11-21 09:32:12,226 - INFO - [4] Entrando a https://www.getonbrd.com/jobs/programacion/analista-desarrollador-front-net-bc-tecnologia-santiago-182c
+2025-11-21 09:32:12,226 - ERROR - Error en scrape_getonboard para desarrollador-web: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77ffda235
+	0x7ff77fd32630
+	0x7ff77fac16dd
+	0x7ff77fa98e31
+	0x7ff77fb4a22e
+	0x7ff77fb6b3d2
+	0x7ff77fb0b0ed
+	0x7ff77fb0bf63
+	0x7ff780005d60
+	0x7ff77ffffe8a
+	0x7ff780021005
+	0x7ff77fd4d71e
+	0x7ff77fd54e1f
+	0x7ff77fd3b7c4
+	0x7ff77fd3b97f
+	0x7ff77fd218e8
+	0x7ffd6811e8d7
+	0x7ffd690cc53c
+
+2025-11-21 09:32:15,357 - ERROR - Error en la función main para el trabajo desarrollador-web: 'NoneType' object is not iterable
+2025-11-21 09:32:15,357 - INFO - Iniciando el scraping para el trabajo: gerente de proyectos
+2025-11-21 09:32:15,357 - INFO - Iniciando scrape_getonboard para gerente-de-proyectos
+2025-11-21 09:32:17,968 - ERROR - Error en scrape_getonboard para gerente-de-proyectos: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77ffda235
+	0x7ff77fd32630
+	0x7ff77fac16dd
+	0x7ff77fa98e31
+	0x7ff77fb4a22e
+	0x7ff77fb6b3d2
+	0x7ff77fb0b0ed
+	0x7ff77fb0bf63
+	0x7ff780005d60
+	0x7ff77ffffe8a
+	0x7ff780021005
+	0x7ff77fd4d71e
+	0x7ff77fd54e1f
+	0x7ff77fd3b7c4
+	0x7ff77fd3b97f
+	0x7ff77fd218e8
+	0x7ffd6811e8d7
+	0x7ffd690cc53c
+
+2025-11-21 09:32:20,101 - ERROR - Error en la función main para el trabajo gerente-de-proyectos: 'NoneType' object is not iterable
+2025-11-21 09:36:57,325 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 09:36:57,326 - INFO - Iniciando scrape_getonboard para analista-de-datos
+2025-11-21 09:37:04,871 - INFO - Encontrados 100 enlaces de ofertas
+2025-11-21 09:47:03,520 - INFO - Iniciando el scraping para el trabajo: analista de datos
+2025-11-21 09:47:03,521 - INFO - Iniciando scrape_getonboard para analista-de-datos
+2025-11-21 09:47:06,653 - ERROR - Error en scrape_getonboard para analista-de-datos: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff77ffda235
+	0x7ff77fd32630
+	0x7ff77fac16dd
+	0x7ff77fa98e31
+	0x7ff77fb4a22e
+	0x7ff77fb6b3d2
+	0x7ff77fb0b0ed
+	0x7ff77fb0bf63
+	0x7ff780005d60
+	0x7ff77ffffe8a
+	0x7ff780021005
+	0x7ff77fd4d71e
+	0x7ff77fd54e1f
+	0x7ff77fd3b7c4
+	0x7ff77fd3b97f
+	0x7ff77fd218e8
+	0x7ffd6811e8d7
+	0x7ffd690cc53c
+
+2025-11-21 09:47:08,912 - ERROR - Error en la función main para el trabajo analista-de-datos: 'NoneType' object is not iterable
+2025-11-21 09:47:08,912 - INFO - Iniciando el scraping para el trabajo: desarrollador web
+2025-11-21 09:47:08,912 - INFO - Iniciando scrape_getonboard para desarrollador-web
+2025-11-21 09:47:18,245 - INFO - Encontrados 100 enlaces de ofertas
+2025-11-21 09:49:37,408 - INFO - Iniciando scraping para: analista de datos
+2025-11-21 09:49:37,408 - INFO - Iniciando scrape_getonboard para analista de datos
+2025-11-21 09:50:15,034 - INFO - Encontrados 33 enlaces válidos de ofertas

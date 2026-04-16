@@ -1,0 +1,43 @@
+{
+    "link": "https://www.getonbrd.com/jobs/data-science-analytics/data-engineer-tienda-pago-ciudad-de-mexico-c153",
+    "title": "Data Engineer",
+    "business_name": "in\nTienda Pago",
+    "description": {
+        "Funciones del cargo": "Buscamos un Data Engineer con al menos 4 años de experiencia en ingeniería de datos, capaz de trabajar con autonomía y liderar proyectos de complejidad media a alta. Requisitos clave: SQL Avanzado, lógica de programación (preferentemente Python, otros lenguajes considerados), experiencia en colas de mensajes y servicios de mensajería/ streaming, integración de datos (Data Lake, Data Warehouse, SQL), modelado de datos, gobernanza y seguridad de datos, automatización de infraestructuras.¿Cuáles serán tus principales responsabilidades? 🤔Diseño y construcción de arquitecturas de modelos escalables y robustas.Experiencia para implementación de diferentes técnicas de modelado como datawarehouse, data lakes y data mesh, utilizando metodologías ágiles.Habilidad para diseñar, desarrollo y mantenimiento de los procesos de ingesta e integración de datos, modelos de análisis y tableros de control en esto deberá incluir optimizar pipelines complejos reduciendo costos y mejorando eficiencia.Desarrollar set de datos que sean incluidos en procesos de minería y modelado de datos para datos estructurados y no estructurados.Habilidad para entender los objetivos del negocio y traducirlos en una estrategia de datos a corto, mediano y largo plazo.Realizar flujo completo para un proyecto de manera autónoma: análisis, diseño y bajar la idea para que él/ella o alguien del equipo lo pueda desarrollar, seguimiento hasta después de la entrega.Autonomía para el manejo e interacción con las áreas de negocio.Tener autoridad para tomar decisiones técnicas y que pueda presentar los resultados de forma clara orientados a los diferentes Stakeholders.Detectar, diseñar e implementar nuevos atributos, estructuras, métricas o indicadores de acuerdo con las políticas de calidad, seguridad y gobernanza de Datos de Tienda Pago.Capacidad para guiar a otros ingenieros, revisar el código y fomentar crecimiento profesional.",
+        "Requerimientos del cargo": "Mínimo 4 años de experiencia en ingeniería de datos.Manejo de SQL Avanzado.Lógica de programación, idealmente en Python, pero podemos considerar profesionales en otros lenguajes.Implementación de colas de mensajes y servicios de mensajería y streaming.Integración de datos (Data Lake, Data Warehouse, SQL).Modelado de datos.Abstracción y conceptualización de ideas.Relación de patrones y piezas faltantes.Gobernanza de datos y seguridad.Experiencia en automatización de infraestructura.Modalidad: Full time.",
+        "Beneficios": "Experiencia en plataforma Azure, Integration Services, DBT, DAX, Power BI (de intermedio a avanzado).",
+        "Conditions": "Aguinaldo superior a la ley.Prima Vacacional 100%Vacaciones de acuerdo a la ley, iniciando en 12 días hábiles y aumentando con la antigüedad.Días libres (8 días) en el primer año y ajustes según la política de Tienda Pago.Día libre por tu cumpleaños (opcional).Días festivos no oficiales.Seguro de Gastos Médicos Mayores.Dentegra (beneficio adicional del seguro de gastos médicos).Seguro de Vida.Acceso a plataformas de aprendizaje como Ubits para desarrollo continuo.¡Conversemos y entérate de los otros beneficios!🥳"
+    },
+    "location": "Remote\n(Mexico)",
+    "seniority": "Senior",
+    "applications_count": "48\n",
+    "all_tags": [
+        "Python",
+        "SQL",
+        "Big Data",
+        "Back-end",
+        "Cybersecurity",
+        "Data Engineer",
+        "Data lake",
+        "Data governance",
+        "Infrastructure",
+        "Streaming",
+        "Data Warehouse",
+        "Programación",
+        "Seguridad",
+        "Integration",
+        "Modeling",
+        "Automatización",
+        "Integración",
+        "Implementación",
+        "Conceptualización",
+        "Infraestructura",
+        "Servicios",
+        "Modelado de Datos",
+        "Ingeniería",
+        "Datos",
+        "Patrones"
+    ],
+    "work_schedule": "FULL_TIME",
+    "publication_time": "November 12, 2025"
+}

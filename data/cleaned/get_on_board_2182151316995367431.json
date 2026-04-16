@@ -1,0 +1,34 @@
+{
+    "link": "https://www.getonbrd.com/empleos/data-science-analytics/ingeniero-de-datos-microsystem-santiago-d91b",
+    "title": "Ingeniero de Datos",
+    "business_name": "in\nMicrosystem",
+    "description": {
+        "Funciones del cargo": "-Gestión de infraestructura de datos:principalmente enAWS.-Desarrollo y optimización de procesos ETL:Implementación de pipelines de datos escalables que soporten grandes volúmenes de información y faciliten análisis complejos.-Colaboración con equipo de Desarrollo:para diseñar soluciones de datos que respondan a las necesidades del negocio, asegurando calidad y confiabilidad.-Desarrollo y mantenimiento de APIs y scripts en Python:para la manipulación de datos y la automatización de procesos.-Gestión de repositorios de código con GitHub:y soporte a la integración continua (CI/CD).-Uso de AWS CDK (Cloud Development Kit):para automatizar la infraestructura como código en la nube.-Participación en reuniones técnicas y de negocio:para asegurar que las soluciones de datos cumplan con los objetivos de la organización.",
+        "Requerimientos del cargo": "-2 años de experiencia con Título profesional de Ingeniero Civil Informática/Computación, Industrial o 5 años de experiencia en áreas vinculadas.-Conocimientos en lenguajes:-Python (Avanzado)- JavaScript (Intermedio)- SQL (Avanzado)- Conocimientos en Contenedores (Docker)- Conocimientos en NubeAWS (Intermedio ).-Git",
+        "Beneficios": "- Terraform ✨- Elastic Search ✨- Kubernetes ✨- Kafka ✨- Linux ✨- Java Spring Boot (Intermedio)",
+        "Conditions": "💫Nuestro equipo ofrece soluciones completas, por lo que te tocará aprender desde cómo levantar un servicio a cómo ir mejorándolo.🧔‍♀️Al ser una área dentro de una empresa más grande y madura, existen muchos colaboradores dispuestos a compartir su experiencia y ayudar en el aprendizaje.😎Somos relajados, entendemos si tienes alguna urgencia durante el día o trámites que hacer, lo que nos importa es que te puedas comprometer con las entregas.🧑‍🎤 Puedes venir como quieras a la oficina, mientras tengas algo puesto.🏋🏻 Tenemos convenios con gimnasios."
+    },
+    "location": "SantiagoThis job is performed partly from home and partly at the office in:Santiago(Hybrid)",
+    "seniority": "Semi Senior",
+    "applications_count": "104\n",
+    "all_tags": [
+        "JavaScript",
+        "Python",
+        "Git",
+        "SQL",
+        "Virtualization",
+        "Amazon Web Services",
+        "Docker",
+        "Cloud Computing",
+        "Back-end",
+        "Data Engineer",
+        "Cloud",
+        "AWS",
+        "Nube",
+        "Computación",
+        "Contenedores",
+        "Informática"
+    ],
+    "work_schedule": "FULL_TIME",
+    "publication_time": "November 03, 2025"
+}

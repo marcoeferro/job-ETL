@@ -1,0 +1,7 @@
+{
+    "title": "Ref. 20764: Data Enginner / Architect - Remoto / pago en USD",
+    "business_name": "ADN",
+    "location": "Recursos Humanos",
+    "description": "En ADN – Recursos Humanos estamos en la búsqueda de Data Enginner / Architect / 100 % Remoto / pago en USD para Importante Empresa.Requerimientos:-Más de siete años de experiencia en plataformas de datos y pipelines ETL productivos.-Formación en Ingeniería, Computación o Ciencias de Datos.-Dominio de AWS (S3, Glue, EMR, DMS, Athena, Redshift, MWAA).-Conocimientos en Spark (PySpark o Scala) y SQL avanzado.-Experiencia con Apache Iceberg o Delta Lake, Airflow, dbt, e IaC (Terraform/CloudFormation).-Buen manejo de prácticas de seguridad y compliance.-Excelente comunicación técnica con stakeholders.Tareas a desarrollar:-Diseñar e implementar una arquitectura de datos moderna basada en AWS.-Desarrollar pipelines de ingestión y transformación de datos en entornos cloud.-Catalogar fuentes de datos y diseñar una arquitectura medallion (Bronze-Silver-Gold).-Migrar cargas de trabajo desde Hive/HDFS hacia Spark.-Desarrollar y mantener DAGs en Airflow, con control de calidad y monitoreo.-Asegurar la calidad de datos utilizando frameworks como Deequ o Great Expectations.-Diseñar capas de consumo en Athena o Redshift Serverless.-Guiar y mentorizar a otros ingenieros/as y analistas.Trabajo remoto.Horario: Lunes a viernes de 9 a 18 hs (horario del este de USA).",
+    "requirements": "Educación mínima: Terciario7 años de experiencia"
+}

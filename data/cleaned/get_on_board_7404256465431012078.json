@@ -1,0 +1,37 @@
+{
+    "link": "https://www.getonbrd.com/jobs/data-science-analytics/data-scientist-artefact-latam-remote",
+    "title": "Data Scientist",
+    "business_name": "in\nArtefact LatAm",
+    "description": {
+        "Funciones del cargo": "Recolectar, limpiar y organizar grandes volúmenes de datos provenientes de diversas fuentes, como bases de datos, archivos planos, APIs, entre otros. Aplicando técnicas de análisis exploratorio para identificar patrones y resumir las características principales de los datos, así como para entender el problema del cliente.Desarrollar modelos predictivos utilizando técnicas avanzadas de aprendizaje automático y estadística para predecir tendencias, identificar patrones y realizar pronósticos precisosOptimizar algoritmos y modelos existentes para mejorar la precisión, eficiencia y escalabilidad, ajustando parámetros y explorando nuevas técnicasCrear visualizaciones claras y significativas para comunicar los hallazgos y resultados al cliente, de manera efectivaComunicar los resultados efectivamente, contando una historia para facilitar la comprensión de los hallazgos y la toma de decisiones por parte del clienteDiseñar y desarrollar herramientas analíticas personalizadas y sistemas de soporte para la toma de decisiones basadas en datos, utilizando lenguaje de programación como Python, R o SQLTrabajo colaborativo:colaborar con equipos multidisciplinarios para abordar problemas complejos y proporcionar soluciones integrales al cliente, además de participar en proyectos de diversa complejidad, asegurando la calidad de los entregables y el cumplimiento de los plazos establecidos.Investigar y mantenerse actualizado en análisis de datos, inteligencia artificial y metodologías para mejorar las capacidades analíticas, adquiriendo rápidamente conocimientos sobre diversas industrias y herramientas específicas",
+        "Requerimientos del cargo": "Conocimientos demostrables en analítica avanzada, sean por estudios o experiencia laboral.Manejo de Python, SQL y Git.Conocimiento de bases de datos relacionalesConocimiento de:Procesamiento de datos (ETL)Machine LearningFeature engineering, reducción de dimensionesEstadística y analítica avanzada",
+        "Beneficios": "Experiencia con:Herramientas de BI (Power BI o Tableau)Servicios cloud (Azure, AWS, GCP)Conocimiento de bases de datos no relacionales (ej: Mongo DB)Conocimiento en optimización",
+        "Conditions": "Presupuesto de 500 USD al año para capacitaciones, sean cursos, membresías, eventos u otros.Rápido crecimiento profesional: Un plan de mentoring para formación y avance de carrera, ciclos de evaluación de aumentos y promociones cada 6 meses.Hasta 11 días de vacaciones adicionales a lo legal. Esto para descansar y poder generar un sano equilibrio entre vida laboral y personal.Participación en el bono por utilidades de la empresa, además de bonos por trabajador referido y por cliente.Medio día libre de cumpleaños, además de un regalito.Almuerzos quincenales pagados con el equipo en nuestros hubs (Santiago, Bogotá, Lima y Ciudad de Mexico).Flexibilidad horaria y trabajo por objetivos.Trabajo remoto, con posibilidad de hacerse híbrido (Oficina en Santiago de Chile, Cowork pagado en Bogotá, Lima y Ciudad de Mexico).Post Natal extendido para hombres, y cobertura de diferencia pagado por sistema de salud para mujeres (Chile)...y más!"
+    },
+    "location": "Remote",
+    "seniority": "Semi Senior",
+    "applications_count": "353\n",
+    "all_tags": [
+        "Python",
+        "Analytics",
+        "Git",
+        "SQL",
+        "Business Intelligence",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "ETL",
+        "Data Science",
+        "Back-end",
+        "Machine Learning Engineer",
+        "Statistics",
+        "Feature Engineering",
+        "Dimensionality Reduction",
+        "Estadística",
+        "Cloud Services",
+        "Analítica",
+        "Bases de Datos Relacionales",
+        "Procesamiento de Datos"
+    ],
+    "work_schedule": "FULL_TIME",
+    "publication_time": "October 01, 2025"
+}

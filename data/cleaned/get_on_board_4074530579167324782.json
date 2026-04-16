@@ -1,0 +1,28 @@
+{
+    "link": "https://www.getonbrd.com/jobs/data-science-analytics/data-engineer-senior-coderslab-io-remote",
+    "title": "Data Engineer Senior",
+    "business_name": "in\nCoderslab.io",
+    "description": {
+        "Funciones del cargo": "Analizar, diseñar, desarrollar y probar procesos de ingesta de datos (ELT) en entornos GCP Big Data.Mantener y evolucionar procesos ETL/ELT, asegurando rendimiento, escalabilidad y fiabilidad.Desarrollar pipelines de datos serverless y automatizar flujos de datos para operaciones analíticas.Integrar, consolidar y limpiar datos para su uso en analítica y reporting.Apoyar en arquitectura y diseño de plataformas de datos dentro de la unidad de Data Factory, colaborando con equipos multidisciplinarios.Participar en la definición de estándares de modelado de datos y buenas prácticas de ingeniería de datos.",
+        "Requerimientos del cargo": "Buscamos un Data Engineer Senior con sólido background en procesos ELT/ETL en entornos Big Data sobre GCP y Data Lake. Debe demostrar capacidad para diseñar e implementar pipelines data-driven, experiencia en desarrollo de pipelines serverless y automatización de procesos. Se valorará la habilidad para modelar y estructurar datos orientados a análisis, así como la capacidad de integrarse de forma proactiva en proyectos complejos, con enfoque técnico y colaborativo. Se espera autonomía, buena comunicación y capacidad de trabajar en un entorno de ritmo alto.",
+        "Beneficios": "Experiencia previa en Data Lake en GCP, con enfoque en ingesta y transformación de grandes volúmenes de datos. Conocimiento de herramientas de orquestación y automatización, como Airflow o Workflows de GCP. Habilidades para trabajar con equipos de Arquitectura y Producto, capacidades de análisis y resolución de problemas, y orientación a resultados. Se valorará experiencia en entornos multinacionales y trabajo remoto colaborativo.",
+        "Conditions": "Contrato de plazo fijo con duración estimada de 6 meses. Salario entre 2.500.000 y 2.700.000 CLP, según experiencia. Equipo propio no provisto; se requiere PC/notebook personal. Ventajas de trabajar con un cliente líder en soluciones de datos y un equipo global de alto rendimiento, con oportunidades de aprendizaje y crecimiento en tecnologías de vanguardia. Modalidad remota con posibles coordinación en Colombia y región. Si te apasiona la ingeniería de datos y quieres contribuir a un Data Lake avanzado, te invitamos a aplicar y formar parte de nuestro equipo."
+    },
+    "location": "Remote",
+    "seniority": "Senior",
+    "applications_count": "38\n",
+    "all_tags": [
+        "Big Data",
+        "ETL",
+        "Automation",
+        "Google Cloud Platform",
+        "Data lake",
+        "ELT",
+        "Data Modeling",
+        "Data Pipeline",
+        "Serverless Computing",
+        "Workflow Orchestration"
+    ],
+    "work_schedule": "FULL_TIME",
+    "publication_time": "November 18, 2025"
+}

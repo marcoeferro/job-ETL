@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos de entorno y configuración sensible
+.env
+.env.*
+
+# Logs
+*.log
+
+# Archivos de datos generados por el scraper
+data/**/*.parquet
+data/**/*.csv
+data/**/*.json
+
+# Archivos temporales
+*.tmp
+*.swp
+
+# IDEs y editores
+.vscode/
+.idea/
+.DS_Store
+
+# Paquetes y builds
+*.egg-info/
+build/
+dist/
+
+# docs
+.docs/

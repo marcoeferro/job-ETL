@@ -33,7 +33,7 @@ def run_pipeline(ds: str = None):
     extracted_data = extract_jobs(
         ds=ds,
         sources=["computrabajo"],           # ← agrega más fuentes cuando las tengas
-        search_query=DEFAULT_SEARCH_QUERY,
+        search_query="data analyst",
         max_pages=DEFAULT_MAX_PAGES
     )
 

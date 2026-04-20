@@ -30,7 +30,7 @@ SCRAPER_BASE_URLS: Dict[str, str] = {
     "indeed": "https://ar.indeed.com",
     "portal_empleo": "https://portalempleo.gob.ar",        # Portal Empleo Nacional
     "zonajobs": "https://www.zonajobs.com.ar",
-    "getonboard": "https://getonboard.com",
+    "getonboard": "https://www.getonbrd.com/",
 }
 
 # ==================== CONFIGURACIÓN ESPECÍFICA POR SITIO ====================

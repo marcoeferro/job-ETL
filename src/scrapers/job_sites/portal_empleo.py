@@ -17,7 +17,6 @@ class PortalEmpleoScraper(BaseJobScraper):
     def __init__(self):
         super().__init__("portal_empleo")
         self.config = get_scraper_config("portal_empleo")
-        # Aseguramos base_url (el config o fallback al valor hardcodeado original)
         self.base_url = getattr(self.config, "base_url", None) or "https://portalempleo.gob.ar"
 
     # ===================== PLAYWRIGHT → SOLO LINKS =====================
@@ -34,7 +33,6 @@ class PortalEmpleoScraper(BaseJobScraper):
         await page.goto(url, timeout=45000)
 
         try:
-            # Esperamos los botones "Ver Oferta" / "comp-button-ciudadanos"
             await page.wait_for_selector("a.btn.btn-success.comp-button-ciudadanos", timeout=15000)
         except Exception as e:
             self.logger.warning(f"Error obteniendo links: {e}")
@@ -66,7 +64,7 @@ class PortalEmpleoScraper(BaseJobScraper):
                 return None
 
     def _parse_job(self, html: str, url: str) -> Dict:
-        """Parse HTML → dict (adaptado a la estructura de PortalEmpleo.gob.ar)"""
+        """Parse HTML → dict (CORREGIDO según HTML de referencia)"""
         soup = BeautifulSoup(html, "html.parser")
 
         def safe_text(selector):
@@ -76,29 +74,91 @@ class PortalEmpleoScraper(BaseJobScraper):
         def safe_all(selector):
             return [e.get_text(strip=True) for e in soup.select(selector)]
 
-        def extract_location(soup):
-            # Patrón típico: "ROSARIO , SANTA FE" o "RIO CUARTO , CORDOBA"
-            match = re.search(r'([A-ZÁÉÍÓÚÑ\s]+)\s*,\s*([A-ZÁÉÍÓÚÑ\s]+)', soup.get_text())
-            if match:
-                return f"{match.group(1).strip()} , {match.group(2).strip()}"
-            return None
+        # ===================== TITLE =====================
+        # Nombre del empleo (h3 con clase específica)
+        title = safe_text("h3.text-capitalize.text-turqueza") or safe_text("h3")
 
-        def extract_posted_date(soup):
-            # Fecha visible tipo "25/11/2024"
-            match = re.search(r'\b(\d{1,2}/\d{1,2}/\d{4})\b', soup.get_text())
-            return match.group(1) if match else None
+        # ===================== COMPANY =====================
+        company = safe_text("div > svg ~ text") or safe_text("strong")  # MARIA ALICIA MARTINELLI
 
+        # ===================== LOCATION =====================
+        location = safe_text("div.col-md-12 p span") or safe_text("svg.fa-map-marker-alt ~ span") or safe_text("svg.fa-map-marker-alt ~ text")
+
+        # ===================== SALARY =====================
+        salary_text = soup.get_text()
+        salary = "A Convenir" if "A Convenir" in salary_text or "a convenir" in salary_text.lower() else None
+        salary_currency = "$ARS"  # ← valor por defecto solicitado
+
+        # ===================== JOB TYPE =====================
         def extract_job_type(soup):
-            text = soup.get_text().lower()
-            if "tiempo completo" in text:
-                return "Tiempo completo"
-            elif "tiempo parcial" in text:
-                return "Tiempo parcial"
+            for label in soup.select("label.fw-600"):
+                if "Disponibilidad" in label.get_text() or "Disponibilidad horaria" in label.get_text():
+                    p = label.find_next("p")
+                    if p:
+                        text = p.get_text(strip=True).lower()
+                        if "tiempo completo" in text:
+                            return "Tiempo completo"
+                        elif "tiempo parcial" in text:
+                            return "Tiempo parcial"
             return None
 
+        job_type = extract_job_type(soup)
+
+        # ===================== EXPERIENCE LEVEL =====================
+        # "Experiencia requerida" (campo específico solicitado)
+        def extract_experience_level(soup):
+            for label in soup.select("label.fw-600"):
+                if "Experiencia Requerida" in label.get_text():
+                    p = label.find_next("p")
+                    if p:
+                        return p.get_text(strip=True)  # Ej: "No"
+            return None
+
+        experience_level = extract_experience_level(soup)
+
+        # ===================== SKILLS =====================
+        # Todo lo de "Requisitos" EXCEPTO "Experiencia Requerida"
+        def extract_skills(soup):
+            skills = []
+            in_requisitos = False
+            for row in soup.select(".row"):
+                h2 = row.select_one("h2")
+                if h2 and "Requisitos" in h2.get_text():
+                    in_requisitos = True
+                    continue
+
+                if in_requisitos:
+                    for label in row.select("label.fw-600"):
+                        label_text = label.get_text(strip=True)
+                        if "Experiencia Requerida" in label_text:
+                            continue  # se excluye (va a experience_level)
+                        p = label.find_next("p")
+                        if p:
+                            value = p.get_text(strip=True)
+                            if value and value.lower() not in ["no", ""]:
+                                skills.append(value)
+            return list(set(skills))  # deduplicar
+
+        skills = extract_skills(soup)
+
+        # ===================== DESCRIPTION =====================
+        desc_parts = []
+        for header in soup.find_all(["h2", "label.fw-600"]):
+            text = header.get_text(strip=True).lower()
+            if any(k in text for k in ["resumen", "tareas", "principales tareas"]):
+                for sibling in header.find_next_siblings():
+                    if sibling.name in ["h2", "label"] and sibling.get_text(strip=True):
+                        break
+                    if sibling.name == "p" and sibling.get_text(strip=True):
+                        desc_parts.append(sibling.get_text(strip=True))
+        description = "\n".join(desc_parts) if desc_parts else safe_text("p")
+
+        # ===================== DATE =====================
+        posted_date = safe_text(".float-right.mt-2") or re.search(r'\b(\d{1,2}/\d{1,2}/\d{4})\b', soup.get_text()).group(1) if re.search(r'\b(\d{1,2}/\d{1,2}/\d{4})\b', soup.get_text()) else None
+
+        # ===================== MODALITY =====================
         def classify_modality(text):
-            # Reutilizamos la lógica de GetOnBoard
-            if text is None:
+            if not text:
                 return "Otros"
             text = text.lower()
             if "remoto" in text:
@@ -107,88 +167,31 @@ class PortalEmpleoScraper(BaseJobScraper):
                 return "Híbrido"
             elif "presencial" in text:
                 return "Presencial"
-            else:
-                return "Otros"
+            return "Otros"
 
-        # TITLE
-        title = safe_text("h3") or safe_text("h1") or safe_text("h2")
-
-        # COMPANY (el primer <strong> suele ser el nombre de la empresa)
-        company = safe_text("strong")
-
-        # LOCATION
-        location = extract_location(soup)
-
-        # DESCRIPTION (sección "Tareas a Realizar")
-        description = None
-        for header in soup.find_all(["h4", "h3", "strong"]):
-            if "tareas a realizar" in header.get_text().lower():
-                desc_parts = []
-                for sibling in header.find_next_siblings():
-                    if sibling.name in ["h4", "h3", "strong"] and sibling.get_text(strip=True):
-                        break
-                    if sibling.get_text(strip=True):
-                        desc_parts.append(sibling.get_text(strip=True))
-                description = "\n".join(desc_parts) if desc_parts else None
-                break
-        # fallback si no se encontró la sección
-        if not description:
-            desc_blocks = [p.get_text(strip=True) for p in soup.select("p") if p.get_text(strip=True)]
-            description = "\n".join(desc_blocks)
-
-        # TAGS / SKILLS (categorías y requisitos)
-        tags = safe_all("strong")
-        skills = list(set(
-            safe_all("li") +
-            safe_all("strong") +
-            [safe_text("span")]
-        ))
-
-        # DATE
-        posted_date = extract_posted_date(soup)
-
-        # SALARY (casi siempre "A Convenir")
-        salary_text = soup.get_text()
-        salary = "A Convenir" if "A Convenir" in salary_text or "a convenir" in salary_text.lower() else None
-        salary_currency = None
-
-        # APPLICANTS (no existe en PortalEmpleo)
-        applicants = None
-
-        # EXPERIENCE / REQUISITOS
-        experience = None
-        for header in soup.find_all(["h4", "h3", "strong"]):
-            if "requisitos" in header.get_text().lower():
-                req_parts = []
-                for sibling in header.find_next_siblings():
-                    if sibling.name in ["h4", "h3", "strong"] and sibling.get_text(strip=True):
-                        break
-                    if sibling.get_text(strip=True):
-                        req_parts.append(sibling.get_text(strip=True))
-                experience = "; ".join(req_parts) if req_parts else None
-                break
-
-        # JOB TYPE
-        job_type = extract_job_type(soup)
-
-        # MODALITY
         modality_text = location or ""
         modality = classify_modality(modality_text)
+
+        # ===================== TAGS =====================
+        tags = safe_all("label.fw-600")
+
+        # ===================== APPLICANTS =====================
+        applicants = None  # no existe en este sitio
 
         return {
             "title": title,
             "company": company,
             "location": location,
             "salary": salary,
-            "salary_currency": salary_currency,
+            "salary_currency": salary_currency,          # ← corregido: siempre $ARS
             "job_type": job_type,
             "modality": modality,
-            "experience_level": experience,
+            "experience_level": experience_level,        # ← corregido: "Experiencia Requerida"
             "posted_date": posted_date,
             "url": url,
             "description_raw": description,
             "tags": tags,
-            "skills": skills,
+            "skills": skills,                            # ← corregido: solo requisitos sin experiencia
             "source_site": "portal_empleo",
             "applicants": applicants,
         }
@@ -230,7 +233,7 @@ class PortalEmpleoScraper(BaseJobScraper):
             connector = aiohttp.TCPConnector(limit=20)
             timeout = aiohttp.ClientTimeout(total=30)
 
-            sem = asyncio.Semaphore(8)  # 🔥 control de concurrencia
+            sem = asyncio.Semaphore(8)
 
             async with aiohttp.ClientSession(
                 headers=headers,
@@ -245,7 +248,6 @@ class PortalEmpleoScraper(BaseJobScraper):
 
                 results = await asyncio.gather(*tasks)
 
-            # limpiar None
             return [r for r in results if r]
 
         results = asyncio.run(run())

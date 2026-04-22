@@ -18,6 +18,10 @@ class ZonajobsScraper(BaseJobScraper):
         self.base_url = getattr(self.config, "base_url", None) or "https://www.zonajobs.com.ar"
 
     # ===================== PLAYWRIGHT → LINKS =====================
+    def _get_url(self, slug:str, p:str, all=False):
+        if all:
+            return f"{self.base_url}/empleos.html?page={p}"
+        return f"{self.base_url}/empleos-busqueda-{slug}.html?page={p}"
 
     async def _auto_scroll(self, page, max_scrolls: int = 8):
         for _ in range(max_scrolls):
@@ -27,10 +31,12 @@ class ZonajobsScraper(BaseJobScraper):
     async def _extract_links_for_job(self, page, job_title: str) -> List[str]:
         hrefs = []
         slug = job_title.replace(" ", "-").lower()
-
+        
         for p in range(1, self.max_pages + 1):
-            url = f"{self.base_url}/empleos-busqueda-{slug}.html?page={p}"
-
+            url = self._get_url(slug,p,all=True)
+            
+            print(url)
+            
             await page.goto(url, timeout=45000)
 
             try:
@@ -121,7 +127,6 @@ class ZonajobsScraper(BaseJobScraper):
         posted_date = safe_text("(//i[contains(@name, 'location')]/following::h2)[2]")
 
         description = safe_text("//*[@id='ficha-detalle']/div[2]/div/div")
-        print("CLAUDFLARE ME CAGO EN TODA TU PUTA MADRE: descripcion",description)
 
         job_type = safe_text("//i[contains(@name, 'clock')]/following::p[1]")
 

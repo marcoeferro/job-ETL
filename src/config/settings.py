@@ -30,30 +30,30 @@ SCRAPER_BASE_URLS: Dict[str, str] = {
     "indeed": "https://ar.indeed.com",
     "portal_empleo": "https://portalempleo.gob.ar",        # Portal Empleo Nacional
     "zonajobs": "https://www.zonajobs.com.ar",
-    "getonboard": "https://www.getonbrd.com/",
+    "getonboard": "https://www.getonbrd.com",
 }
 
 # ==================== CONFIGURACIÓN ESPECÍFICA POR SITIO ====================
 SCRAPER_CONFIG: Dict[str, Dict] = {
     "computrabajo": {
         "rate_limit": 1.2,
-        "max_pages": 8,
+        "max_pages": 31,
     },
     "indeed": {
         "rate_limit": 1.5,
-        "max_pages": 10,
+        "max_pages": 31,
     },
     "portal_empleo": {
         "rate_limit": 2.0,
-        "max_pages": 5,
+        "max_pages": 31,
     },
     "zonajobs": {
         "rate_limit": 1.3,
-        "max_pages": 6,
+        "max_pages": 31,
     },
     "getonboard": {
         "rate_limit": 1.0,
-        "max_pages": 15,      # GetOnBoard suele tener menos paginación
+        "max_pages": 31,      
     },
 }
 

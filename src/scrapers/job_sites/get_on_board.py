@@ -19,6 +19,11 @@ class GetOnBoardScraper(BaseJobScraper):
         self.config = get_scraper_config("getonboard")
 
     # ===================== PLAYWRIGHT → SOLO LINKS =====================
+    def _get_url(self, job_title:str, all=False):
+        if all:
+            return f"{self.base_url}/empleos/"
+        return f"{self.base_url}/empleos-{job_title.replace(' ', '-')}"
+
 
     async def _auto_scroll(self, page, max_scrolls: int = 6):
         """Scroll limitado (evita loops infinitos)"""
@@ -27,18 +32,23 @@ class GetOnBoardScraper(BaseJobScraper):
             await page.wait_for_timeout(300)
 
     async def _extract_links_for_job(self, page, job_title: str) -> List[str]:
-        url = f"{self.base_url}/empleos-{job_title.replace(' ', '-')}"
-        await page.goto(url, timeout=45000)
+        all = True
 
+        listado = "div.gb-results-list" if all else "ul.gb-results-list"
+
+        url = self._get_url(job_title=job_title,all=all)
+
+        await page.goto(url, timeout=45000)
+            
         try:
-            await page.wait_for_selector("ul.gb-results-list", timeout=15000)
+            await page.wait_for_selector(f"{listado}", timeout=15000)
         except Exception as e:
             self.logger.warning(f"Error obteniendo links: {e}")
             return []
 
         await self._auto_scroll(page)
 
-        hrefs = await page.locator("ul.gb-results-list a").evaluate_all(
+        hrefs = await page.locator(f"{listado} a").evaluate_all(
             "nodes => nodes.map(n => n.getAttribute('href'))"
         )
 

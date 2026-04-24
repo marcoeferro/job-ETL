@@ -27,27 +27,43 @@ class PortalEmpleoScraper(BaseJobScraper):
             await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             await page.wait_for_timeout(300)
 
+    def _get_url(self,job_title,page_number, all=False):
+        if all:
+            return f"{self.base_url}/OfertasLaborales?page-number={page_number}"
+        return f"{self.base_url}/OfertasLaborales?Q={job_title.replace(' ', '+')}?page-number={page_number}"
+
+
     async def _extract_links_for_job(self, page, job_title: str) -> List[str]:
         """Extrae links de detalle usando el selector original del scraper"""
         url = f"{self.base_url}/OfertasLaborales?Q={job_title.replace(' ', '+')}"
-        await page.goto(url, timeout=45000)
 
-        try:
-            await page.wait_for_selector("a.btn.btn-success.comp-button-ciudadanos", timeout=15000)
-        except Exception as e:
-            self.logger.warning(f"Error obteniendo links: {e}")
-            return []
+        hrefs = []
 
-        await self._auto_scroll(page)
+        all = True
+        
+        for page_number in range(1, self.max_pages+1):
+            
+            url = self._get_url(job_title=job_title,page_number=page_number,all=all)
+            
+            await page.goto(url, timeout=45000)
 
-        hrefs = await page.locator("a.btn.btn-success.comp-button-ciudadanos").evaluate_all(
-            "nodes => nodes.map(n => n.getAttribute('href'))"
-        )
+            try:
+                await page.wait_for_selector("a.btn.btn-success.comp-button-ciudadanos", timeout=15000)
+            except Exception as e:
+                self.logger.warning(f"Error obteniendo links: {e}")
+                return []
 
+            await self._auto_scroll(page)
+
+            current_hrefs = await page.locator("a.btn.btn-success.comp-button-ciudadanos").evaluate_all(
+                "nodes => nodes.map(n => n.getAttribute('href'))"
+            )
+            hrefs.extend([h for h in current_hrefs if h])
+        
         return list({
-            normalize_url(h, self.base_url)
-            for h in hrefs if h
-        })
+                normalize_url(h, self.base_url)
+                for h in hrefs if h
+            })
 
     # ===================== REQUESTS + BS4 =====================
 

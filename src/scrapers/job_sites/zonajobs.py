@@ -31,11 +31,9 @@ class ZonajobsScraper(BaseJobScraper):
     async def _extract_links_for_job(self, page, job_title: str) -> List[str]:
         hrefs = []
         slug = job_title.replace(" ", "-").lower()
-        
+        all = True
         for p in range(1, self.max_pages + 1):
-            url = self._get_url(slug,p,all=True)
-            
-            print(url)
+            url = self._get_url(slug,p,all=all)
             
             await page.goto(url, timeout=45000)
 

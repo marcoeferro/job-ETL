@@ -32,7 +32,7 @@ def run_pipeline(ds: str = None):
     logger.info("📥 Etapa 1: Extract")
     extracted_data = extract_jobs(
         ds=ds,
-        sources=["computrabajo"],           # ← agrega más fuentes cuando las tengas
+        sources=["zonajobs","get_on_board","portal_empleo"],
         search_query="data analyst",
         max_pages=DEFAULT_MAX_PAGES
     )

@@ -15,4 +15,4 @@ RUN pip install -e .
 # Variable para que Python encuentre el src/
 ENV PYTHONPATH=/app/src:$PYTHONPATH
 
-CMD ["python", "-m", "src.main"]
+CMD ["python", "-m", "main"]

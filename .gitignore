@@ -37,3 +37,11 @@ dist/
 
 # docs
 .docs/
+
+#Airflow
+airflow/logs/
+airflow/airflow.db
+
+# Otros
+.DS_Store
+.db

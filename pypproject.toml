@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job_market_etl"
+version = "0.1.0"
+description = "ETL pipeline for job market intelligence"
+authors = [{name = "Your Name", email = "you@example.com"}]
+dependencies = [
+    "apache-airflow>=2.7.0",
+    "pandas>=2.0.0",
+    "psycopg2-binary>=2.9.0",
+    "sqlalchemy>=2.0.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "streamlit>=1.25.0",
+    "plotly>=5.15.0",
+    "fuzzywuzzy>=0.18.0"
+]

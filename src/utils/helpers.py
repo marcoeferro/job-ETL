@@ -43,9 +43,12 @@ def normalize_url(href: Optional[str], base_url: str) -> Optional[str]:
         return None
     return href if href.startswith("http") else f"{base_url.rstrip('/')}/{href.lstrip('/')}"
 
-
 def ensure_path(path: str | Path) -> Path:
     """Crea el directorio si no existe (útil para load.py y raw data)"""
     path = Path(path)
     path.mkdir(parents=True, exist_ok=True)
     return path
+
+def ensure_dir(path: str):
+    import os
+    os.makedirs(path, exist_ok=True)

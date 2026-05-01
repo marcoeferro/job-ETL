@@ -17,3 +17,7 @@ CUSTOM_USER_AGENT = os.getenv("CUSTOM_USER_AGENT")
 
 # Para Airflow / Streamlit (si usás variables sensibles)
 AIRFLOW__CORE__SQL_ALCHEMY_CONN = os.getenv("AIRFLOW__CORE__SQL_ALCHEMY_CONN")
+
+# Para manejo seguro de secretos (ej: API keys)
+def get_secret(key):
+    return os.getenv(key)

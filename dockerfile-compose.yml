@@ -11,12 +11,15 @@ services:
       POSTGRES_DB: airflow
     volumes:
       - postgres_db:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
       test: [ "CMD", "pg_isready", "-U", "airflow" ]
       interval: 5s
       retries: 5
+    restart: always
 
   airflow-webserver:
+    image: apache/airflow:2.7.3
     build: ./airflow
     container_name: airflow-webserver
     command: webserver
@@ -36,8 +39,15 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "curl", "--fail", "http://localhost:8080/health" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
 
   airflow-scheduler:
+    image: apache/airflow:2.7.3
     build: ./airflow
     container_name: airflow-scheduler
     command: scheduler
@@ -47,11 +57,14 @@ services:
       - PYTHONPATH=/opt/airflow/src
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-      - ./src:/opt/airflow/src
-      - ./data:/opt/airflow/data
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./src:/opt/airflow/src # ???
+      - ./data:/opt/airflow/data # ???
     depends_on:
       - postgres
       - airflow-webserver
+    restart: always
 
   airflow-worker:
     build: ./airflow
